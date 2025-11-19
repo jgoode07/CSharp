@@ -20,4 +20,21 @@ while (keepGoing)
             Console.WriteLine("Invalid score. Please enter a number between 0 and 100.");
         }
     }
+
+    // Categorize the Score
+    string category;
+
+    if (score >= 90)
+        category = "Excellent";
+    else if (score >= 80)
+        category = "Good";
+    else if (score >= 70)
+        category = "Satisfactory";
+    else if (score >= 60)
+        category = "Needs Improvement";
+    else
+        category = "Fail";
+
+    // Display the result
+    Console.WriteLine($"Score Category: {category}");
 }
