@@ -1,10 +1,10 @@
-﻿/****************************************************
- * AverageCalculator
- * Author: Joe Goode
- *
- * This program asks the user for three numbers, 
- * calculates the average, and prints the result. 
- ***************************************************/
+﻿/***************************************************
+* AverageCalculator
+* Author: Joe Goode
+*
+* This program asks the user for three numbers, 
+* calculates the average, and prints the result. 
+***************************************************/
 Console.WriteLine("=== Average Calculator ===");
 
 // Get Three Numbers from the User
