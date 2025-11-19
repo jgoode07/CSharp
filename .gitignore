@@ -1,0 +1,125 @@
+#############################
+# .NET / C# Build Artifacts
+#############################
+
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+TestResults/
+*.pidb
+*.svclog
+*.scc
+
+#############################
+# VS Code
+#############################
+
+.vscode/
+.history/
+*.code-workspace
+
+#############################
+# Visual Studio
+#############################
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+#############################
+# Project Files
+#############################
+
+# C# project metadata that should not be committed
+*.csproj.user
+*.csproj.nuget.cache
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+#############################
+# NuGet
+#############################
+
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+#############################
+# Auto-Generated Files
+#############################
+
+*.g.cs
+*.g.i.cs
+*.Designer.cs
+*.xaml.cs
+
+#############################
+# Temporary / Backup Files
+#############################
+
+*~
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+#############################
+# OS-Specific
+#############################
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+#############################
+# JetBrains Rider
+#############################
+
+.idea/
+*.iml
+
+#############################
+# DotCover / Test Tools
+#############################
+
+*.dotCover
+*.coverage
+*.coveragexml
+*.psess
+*.vsp
+*.vspx
+
+#############################
+# Entity Framework
+#############################
+
+Migrations/
+
+#############################
+# ASP.NET / Hosting
+#############################
+
+appsettings.*.json
+
+#############################
+# Local Environment Files
+#############################
+
+*.local.json
+
+#############################
+# C# Scripts
+#############################
+
+*.csx
+*.cake
