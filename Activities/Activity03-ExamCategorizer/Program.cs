@@ -1,4 +1,13 @@
-﻿bool keepGoing = true;
+﻿/***************************************************************
+* ExamCategorizer
+* Author: Joe Goode
+*
+* This program asks the user for a student's exam score,
+* validates the input, and then categorizes the score as
+* Excellent, Good, Satisfactory, Needs Improvement, or Fail.
+* The user can repeat the process as many times as they want.
+**************************************************************/
+bool keepGoing = true;
 
 while (keepGoing)
 {
