@@ -37,4 +37,16 @@ while (keepGoing)
 
     // Display the result
     Console.WriteLine($"Score Category: {category}");
+
+    // Ask if User Wants to Check Another Score
+    Console.Write("\nWould you like to categorize another score? (y/n): ");
+    string again = Console.ReadLine().Trim().ToLower();
+
+    if (again != "y")
+        keepGoing = false;
+
+    // Line Break for Cleaner Formatting
+    Console.WriteLine();
 }
+
+Console.WriteLine("Program ended.");
