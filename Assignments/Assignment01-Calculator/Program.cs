@@ -18,3 +18,45 @@ double second = Convert.ToDouble(Console.ReadLine());
 double result = 0;
 // This holds the math symbol for the chosen operation (+, -, *, /, ^)
 string symbol = "";
+
+// Operation selection
+if (choice == 1)
+{
+    result = Add(first, second);
+    symbol = "+";
+}
+else if (choice == 2)
+{
+    result = Subtract(first, second);
+    symbol = "-";
+}
+else if (choice == 3)
+{
+    result = Multiply(first, second);
+    symbol = "*";
+}
+else if (choice == 4)
+{
+    // Only check the second number since it's the divisor. 
+    // If it's zero, the division would throw a runtime error.
+    if (second == 0)
+    {
+        Console.WriteLine("Cannot divide by zero.");
+        Environment.Exit(0);
+    }
+
+    result = Divide(first, second);
+    symbol = "/";
+}
+else if (choice == 5)
+{
+    result = Power(first, second);
+    symbol = "^";
+}
+else
+{
+    Console.WriteLine("Invalid choice. Please run the program again and choose 1-5.");
+    Environment.Exit(0);
+}
+
+Console.WriteLine($"{first} {symbol} {second} = {result}");
