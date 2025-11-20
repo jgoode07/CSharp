@@ -82,3 +82,17 @@ static double Divide(double a, double b)
 {
     return a / b;
 }
+
+static double Power(double baseValue, double exponentValue)
+{
+    // The exponent is used as a count for how many times tp multiply the base.
+    int exponent = (int)exponentValue;
+    double result = 1;
+
+    for (int i = 0; i < exponent; i++)
+    {
+        result = Multiply(result, baseValue);
+    }
+
+    return result;
+}
