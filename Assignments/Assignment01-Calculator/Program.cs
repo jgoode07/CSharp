@@ -1,4 +1,13 @@
-﻿Console.WriteLine("=== Assignment 1: Calculator ===");
+﻿/// <summary>
+/// Assignment 1 calculator program that lets the user
+/// choose a math operation, enter two numbers, and 
+/// displays the result.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode
+/// Course: C# Programming
+/// </remarks>
+Console.WriteLine("=== Assignment 1: Calculator ===");
 Console.WriteLine("Choose an operation:");
 Console.WriteLine("1 - Add (+)");
 Console.WriteLine("2 - Subtract (-)");
