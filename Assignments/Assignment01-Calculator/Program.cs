@@ -71,7 +71,6 @@ else
 Console.WriteLine($"{first} {symbol} {second} = {result}");
 
 // Functions for Each Operation
-
 static double Add(double a, double b)
 {
     return a + b;
