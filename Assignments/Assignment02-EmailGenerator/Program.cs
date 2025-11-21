@@ -1,4 +1,12 @@
-﻿Console.Write("Enter your first name: ");
+﻿/// <summary>
+/// Generates a student email address using the user's 
+/// first name (first letter), last name, and year of birth.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode
+/// Course: C# Programming
+/// </remarks>
+Console.Write("Enter your first name: ");
 string firstName = Console.ReadLine();
 
 Console.Write("Enter your last name: ");
