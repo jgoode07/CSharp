@@ -18,3 +18,7 @@ catch
     Environment.Exit(0);
     return;
 }
+
+// Build email address
+string firstLetter = firstName.Substring(0, 1).ToLower();
+string email = $"{firstLetter}{lastName.ToLower()}{birthYear}@robertsoncollege.ca";
