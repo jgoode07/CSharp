@@ -30,3 +30,7 @@ catch
 // Build email address
 string firstLetter = firstName.Substring(0, 1).ToLower();
 string email = $"{firstLetter}{lastName.ToLower()}{birthYear}@robertsoncollege.ca";
+
+// Friendly output message
+Console.WriteLine($"\nHello {firstName} {lastName}, welcome to Robertson College!");
+Console.WriteLine($"Your new email address is {email}");
