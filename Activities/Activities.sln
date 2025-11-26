@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity01-AverageCalculator", "Activity01-AverageCalculator\Activity01-AverageCalculator.csproj", "{A17B831B-A130-E25A-93C5-96D80B28000A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity02-TemperatureConversion", "Activity02-TemperatureConversion\Activity02-TemperatureConversion.csproj", "{355F6F7F-69E2-948D-C367-7E32995899F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Activity03-ExamCategorizer", "Activity03-ExamCategorizer\Activity03-ExamCategorizer.csproj", "{A9C42F6F-942B-6846-5C82-75B4386599FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A17B831B-A130-E25A-93C5-96D80B28000A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A17B831B-A130-E25A-93C5-96D80B28000A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A17B831B-A130-E25A-93C5-96D80B28000A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A17B831B-A130-E25A-93C5-96D80B28000A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355F6F7F-69E2-948D-C367-7E32995899F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355F6F7F-69E2-948D-C367-7E32995899F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355F6F7F-69E2-948D-C367-7E32995899F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355F6F7F-69E2-948D-C367-7E32995899F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C42F6F-942B-6846-5C82-75B4386599FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C42F6F-942B-6846-5C82-75B4386599FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C42F6F-942B-6846-5C82-75B4386599FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C42F6F-942B-6846-5C82-75B4386599FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC688783-52C0-4E2D-8116-5F20855FB145}
+	EndGlobalSection
+EndGlobal
