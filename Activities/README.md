@@ -12,7 +12,6 @@ This folder contains all of the smaller practice activities completed throughout
 ## Current Activities
 - Activity 01 – Average Calculator  
 - Activity 02 – Temperature Converter  
-- Activity 03 – Exam Score Categorizer  
-
-## Future Activities
-More activities will be added…
+- Activity 03 – Exam Score Categorizer
+- Activity 04 – Zoo Animals
+- Activity 05 – Email Notifications
