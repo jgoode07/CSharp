@@ -7,4 +7,21 @@ while (choice != 0)
     Console.WriteLine("=== Book Library Menu ===");
     Console.WriteLine("0 - Exit");
     Console.Write("Enter your choice: ");
+
+    // Try to Read a Number
+    bool valid = int.TryParse(Console.ReadLine(), out choice);
+
+    if (!valid)
+    {
+        Console.WriteLine("Invalid input. Please enter a number.\n");
+        continue;
+    }
+
+    if (choice == 0)
+    {
+        Console.WriteLine("Exiting... Goodbye!");
+        break;
+    }
+
+    Console.WriteLine("This operation is not supported, please try again.\n");
 }
