@@ -24,11 +24,30 @@ while (choice != 0)
         continue;
     }
 
-    if (choice == 0)
+    switch (choice)
     {
-        Console.WriteLine("Exiting... Goodbye!");
-        break;
-    }
+        case 1:
+            AddBook();
+            break;
 
-    Console.WriteLine("This operation is not supported, please try again.\n");
+        case 2:
+            FindBook();
+            break;
+
+        case 3:
+            BorrowBook();
+            break;
+
+        case 4:
+            ReturnBook();
+            break;
+
+        case 0:
+            Console.WriteLine("Exiting... Goodbye!");
+            break;
+
+        default:
+            Console.WriteLine("This operation is not supported, please try again.\n");
+            break;
+    }
 }
