@@ -92,3 +92,25 @@ void AddBook()
 
     Console.WriteLine($"Book '{title}' added successfully!\n");
 }
+
+void FindBook()
+{
+    Console.WriteLine("\n=== Find a Book ===");
+    Console.Write("Enter the book title: ");
+    string title = Console.ReadLine()!;
+
+    // Look for the book (case insensitive)
+    IBook? found = library.FirstOrDefault(
+        b => b.Title.Equals(title, StringComparison.OrdinalIgnoreCase)
+    );
+
+    if (found == null)
+    {
+        Console.WriteLine($"The book '{title}' does not exist in the library.\n");
+        return;
+    }
+
+    // Report the status using ternary
+    string status = found.IsBorrowed ? "borrowed" : "available";
+    Console.WriteLine($"The book '{title}' is {status}.\n");
+}
