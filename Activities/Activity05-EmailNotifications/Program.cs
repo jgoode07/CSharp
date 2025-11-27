@@ -1,4 +1,13 @@
-﻿using System;
+﻿/// <summary>
+/// Small practice program showing how to raise and handle events
+/// using a basic email notification example.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: C# Programming  
+/// </remarks>
+
+using System;
 
 // Create the Email Sender
 Email incomingEmail = new Email();

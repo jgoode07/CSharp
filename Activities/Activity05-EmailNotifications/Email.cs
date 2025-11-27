@@ -28,6 +28,6 @@ public class Email
     // Method to Simulate Receiving an Email
     public void ReceiveEmail(Email email)
     {
-        EmailReceived?.Invoke(this);
+        EmailReceived?.Invoke(email);
     }
 }
