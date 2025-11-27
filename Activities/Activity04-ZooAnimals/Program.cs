@@ -1,4 +1,13 @@
-﻿// Create a New Zoo
+﻿/// <summary>
+/// Runs the Zoo Animals program by creating a Zoo,
+/// adding animals, and showing their info and sounds.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: C# Programming
+/// </remarks>
+
+// Create a New Zoo
 Zoo myZoo = new Zoo();
 
 // Create Animals
