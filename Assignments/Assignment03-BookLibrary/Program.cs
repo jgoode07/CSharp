@@ -51,3 +51,44 @@ while (choice != 0)
             break;
     }
 }
+
+// Methods
+void AddBook()
+{
+    Console.WriteLine("\n=== Add a New Book ===");
+
+    Console.Write("Enter the book type (ebook / hardcover / audio): ");
+    string type = Console.ReadLine()!.ToLower();
+
+    Console.Write("Enter the book title: ");
+    string title = Console.ReadLine()!;
+
+    IBook newBook;
+
+    // Pick which book type to make
+    if (type == "ebook")
+    {
+        newBook = new Ebook(title);
+    }
+    else if (type == "hardcover")
+    {
+        newBook = new HardCover(title);
+    }
+    else if (type == "audio")
+    {
+        newBook = new Audiobook(title);
+    }
+    else
+    {
+        Console.WriteLine("Unknown book type. Please try again.\n");
+        return;
+    }
+
+    // Make sure each new book starts as not borrowed
+    newBook.MarkAsReturned();
+
+    // Add to library list
+    library.Add(newBook);
+
+    Console.WriteLine($"Book '{title}' added successfully!\n");
+}
