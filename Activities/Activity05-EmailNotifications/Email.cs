@@ -9,8 +9,24 @@ public class Email
     // Event Raised When a New Email is Received
     public event Action<Email>? EmailReceived;
 
+    // Constructor for Creating an Actual Email
+    public Email(string sender, string subject, string content)
+    {
+        Sender = sender;
+        Subject = subject;
+        Content = content;
+    }
+
+    // Empty Constructor for the Event
+    public Email()
+    {
+        Sender = "";
+        Subject = "";
+        Content = "";
+    }
+
     // Method to Simulate Receiving an Email
-    public void ReceiveEmail()
+    public void ReceiveEmail(Email email)
     {
         EmailReceived?.Invoke(this);
     }
