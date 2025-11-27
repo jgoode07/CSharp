@@ -1,26 +1,24 @@
-public class HardCover : IBook
+public class Audiobook : IBook
 {
     public string Title { get; set; }
     public bool IsBorrowed { get; set; }
     public string Location { get; set; }
 
-    public HardCover(string title)
+    public Audiobook(string title)
     {
         Title = title;
         IsBorrowed = false;
-        Location = "Library";
+        Location = "Web";
     }
 
     public void MarkAsBorrowed()
     {
         IsBorrowed = true;
-        Location = "Client";
     }
 
     public void MarkAsReturned()
     {
         IsBorrowed = false;
-        Location = "Library";
     }
 
     public string GetLocation()
