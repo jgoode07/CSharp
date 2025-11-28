@@ -26,5 +26,4 @@ Each assignment has its own project and follows the instructions from the weekly
 Completed so far:
 - Assignment 01 – Calculator  
 - Assignment 02 – Email Address Generator
-
-More assignments will be added later.
+- Assignment 03 – Book Library
