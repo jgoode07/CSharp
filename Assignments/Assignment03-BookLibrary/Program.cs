@@ -114,3 +114,24 @@ void FindBook()
     string status = found.IsBorrowed ? "borrowed" : "available";
     Console.WriteLine($"The book '{title}' is {status}.\n");
 }
+
+void BorrowBook()
+{
+    Console.Write("Enter the book title to borrow: ");
+    string title = Console.ReadLine()!;
+
+    // Find the matching book
+    IBook? found = library.FirstOrDefault(
+        b => b.Title.Equals(title, StringComparison.OrdinalIgnoreCase)
+    );
+
+    if (found == null)
+    {
+        Console.WriteLine($"The book '{title}' does not exist in the library.\n");
+        return;
+    }
+
+    // Borrow it
+    found.MarkAsBorrowed();
+    Console.WriteLine($"You have borrowed '{title}'.\n");
+}
