@@ -1,4 +1,14 @@
-﻿// Start choice at -1 so the loop runs at least once
+﻿/// <summary>
+/// Small console app for managing a simple book library.
+/// Built to practice interfaces, class types, and basic 
+/// program structure in C#.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: C# Programming  
+/// </remarks>
+
+// Start choice at -1 so the loop runs at least once
 int choice = -1;
 
 // List to store all books in the library
