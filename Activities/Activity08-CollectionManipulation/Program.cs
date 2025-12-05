@@ -1,4 +1,13 @@
-﻿using System;
+﻿/// <summary>
+/// Practice program to understand basic collection manipulation in C#.
+/// Includes List operations, duplicate removal, and Dictionary usage.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET
+/// </remarks>
+
+using System;
 using System.Collections.Generic;
 
 List<int> numbers = new List<int>();
