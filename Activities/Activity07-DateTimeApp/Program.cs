@@ -1,4 +1,14 @@
-﻿using System;
+﻿/// <summary>
+/// Small practice program that works with DateTime to display
+/// the current date and time, add days, and calculating the
+/// difference between two dates.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET  
+/// </remarks>
+
+using System;
 
 class Program
 {
