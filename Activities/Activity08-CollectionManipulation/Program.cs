@@ -39,3 +39,20 @@ foreach (int num in uniqueNumbers)
     Console.Write(num + " ");
 }
 Console.WriteLine();
+Console.WriteLine();
+
+// Dictionary to store book titles and authors
+Dictionary<string, string> books = new Dictionary<string, string>()
+{
+    { "Pet Sematary", "Stephen King" },
+    { "Along Came a Spider", "James Patterson" },
+    { "Fear and Loathing in Las Vegas", "Hunter S. Thompson" },
+    { "The Silence of the Lambs", "Thomas Harris" }
+};
+
+Console.WriteLine("Book Collection:");
+foreach (var book in books)
+{
+    Console.WriteLine($"\"{book.Key}\" by {book.Value}");
+}
+Console.WriteLine();
