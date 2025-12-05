@@ -11,3 +11,13 @@ string? userRegexInput = Console.ReadLine();
 string activeRegex = string.IsNullOrWhiteSpace(userRegexInput)
     ? defaultRegex
     : userRegexInput;
+
+// Ask the user for input to test
+Console.Write("Enter some input: ");
+string? userInput = Console.ReadLine() ?? string.Empty;
+
+// Check for a match
+bool isMatch = Regex.IsMatch(userInput, activeRegex);
+
+// Display result
+Console.WriteLine($"{userInput} matches {activeRegex}? {isMatch}");
