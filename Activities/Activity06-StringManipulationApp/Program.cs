@@ -1,4 +1,14 @@
-﻿Console.Write("Enter a sentence or phrase: ");
+﻿/// <summary>
+/// Small practice program that takes user input, counts the number of 
+/// characters, displays the text in uppercase, and shows the text in 
+/// reverse order.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET  
+/// </remarks>
+
+Console.Write("Enter a sentence or phrase: ");
 string? userInput = Console.ReadLine();
 
 if (string.IsNullOrEmpty(userInput))
