@@ -27,3 +27,15 @@ int max = numbers.Max();
 Console.WriteLine();
 Console.WriteLine($"Minimum Value: {min}");
 Console.WriteLine($"Maximum Value: {max}");
+
+// Remove duplicates from the list
+List<int> uniqueNumbers = numbers.Distinct().ToList();
+
+// Display list after removing duplicates
+Console.WriteLine();
+Console.WriteLine("List After Removing Duplicates:");
+foreach (int num in uniqueNumbers)
+{
+    Console.Write(num + " ");
+}
+Console.WriteLine();
