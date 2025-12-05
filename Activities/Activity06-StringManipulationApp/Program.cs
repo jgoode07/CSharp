@@ -12,3 +12,9 @@ Console.WriteLine($"\nNumber of characters: {characterCount}");
 
 string upperCaseVersion = userInput.ToUpper();
 Console.WriteLine($"Uppercase version: {upperCaseVersion}");
+
+char[] characters = userInput.ToCharArray();
+Array.Reverse(characters);
+string reversed = new string(characters);
+
+Console.WriteLine($"Reversed: {reversed}");
