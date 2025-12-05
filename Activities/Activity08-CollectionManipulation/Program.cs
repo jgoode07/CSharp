@@ -18,3 +18,12 @@ foreach (int num in numbers)
 }
 
 Console.WriteLine();
+
+// Find minimum and maximum values
+int min = numbers.Min();
+int max = numbers.Max();
+
+// Display min and max
+Console.WriteLine();
+Console.WriteLine($"Minimum Value: {min}");
+Console.WriteLine($"Maximum Value: {max}");
