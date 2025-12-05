@@ -23,5 +23,13 @@ class Program
         string userInput = Console.ReadLine();
 
         DateTime userDate = DateTime.Parse(userInput);
+
+        // Find the difference in days
+        TimeSpan difference = userDate - currentDateTime;
+        int totalDays = Math.Abs(difference.Days);
+
+        Console.WriteLine();
+        Console.WriteLine("Difference Between Today and Your Date:");
+        Console.WriteLine(totalDays + " days");
     }
 }
