@@ -9,3 +9,6 @@ if (string.IsNullOrEmpty(userInput))
 
 int characterCount = userInput.Length;
 Console.WriteLine($"\nNumber of characters: {characterCount}");
+
+string upperCaseVersion = userInput.ToUpper();
+Console.WriteLine($"Uppercase version: {upperCaseVersion}");
