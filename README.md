@@ -27,3 +27,4 @@ Completed so far:
 - Assignment 01 – Calculator  
 - Assignment 02 – Email Address Generator
 - Assignment 03 – Book Library
+- Assignment 04 – Regex Matcher
