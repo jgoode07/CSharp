@@ -14,9 +14,15 @@ if (!File.Exists(filePath))
 
     File.WriteAllText(filePath, sampleContent);
 
-    Console.WriteLine("Sample file created with initial content.");
+    Console.WriteLine("Sample file created with provided content.");
 }
 else
 {
     Console.WriteLine("File already exists. Using existing file.");
 }
+
+// Read and display file contents
+Console.WriteLine("\n--- Current File Contents ---");
+
+string fileContents = File.ReadAllText(filePath);
+Console.WriteLine(fileContents);
