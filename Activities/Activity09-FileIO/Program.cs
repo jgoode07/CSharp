@@ -26,3 +26,22 @@ Console.WriteLine("\n--- Current File Contents ---");
 
 string fileContents = File.ReadAllText(filePath);
 Console.WriteLine(fileContents);
+
+// Ask the user to add new content
+Console.WriteLine("Add a new line to the file:");
+string? newLine = Console.ReadLine();
+
+if (!string.IsNullOrWhiteSpace(newLine))
+{
+    File.AppendAllText(filePath, newLine + Environment.NewLine);
+    Console.WriteLine("\nNew content added successfully.");
+}
+else
+{
+    Console.WriteLine("\nNo content entered. File unchanged.");
+}
+
+// Display updated file contents
+Console.WriteLine("\nUpdated File Contents:\n");
+string updatedContents = File.ReadAllText(filePath);
+Console.WriteLine(updatedContents);
