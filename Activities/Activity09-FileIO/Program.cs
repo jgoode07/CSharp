@@ -1,4 +1,14 @@
-﻿using System;
+﻿/// <summary>
+/// The program creates a text file with sample content if it does not exist,
+/// displays the contents, allows the user to add new input, and then shows
+/// the updated file contents.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET  
+/// </remarks>
+
+using System;
 using System.IO;
 
 string filePath = "activity9.txt";
