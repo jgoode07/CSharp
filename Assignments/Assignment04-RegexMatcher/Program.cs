@@ -1,4 +1,13 @@
-﻿using System;
+﻿/// <summary>
+/// Console app that lets the user enter a regular expression (regex)
+/// and test it against input strings until they press ESC to quit.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET 
+/// </remarks>
+
+using System;
 using System.Text.RegularExpressions;
 
 string defaultRegex = @"^[a-z]+$";
