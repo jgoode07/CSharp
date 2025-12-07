@@ -10,7 +10,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-string defaultRegex = @"^[a-z]+$";
+string defaultRegex = @"^(?=.*\d)[a-z0-9]+$";
 
 while (true)
 {
