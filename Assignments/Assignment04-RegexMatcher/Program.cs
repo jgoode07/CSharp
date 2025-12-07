@@ -10,7 +10,8 @@
 using System;
 using System.Text.RegularExpressions;
 
-string defaultRegex = @"^(?=.*\d)[a-z0-9]+$";
+// Check for at least one digit
+string defaultRegex = @"^.*\d.*$";
 
 while (true)
 {
