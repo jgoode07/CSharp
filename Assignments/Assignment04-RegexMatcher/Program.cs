@@ -27,11 +27,16 @@ while (true)
     Console.Write("Enter some input: ");
     string? userInput = Console.ReadLine() ?? string.Empty;
 
-    // Check for a match
-    bool isMatch = Regex.IsMatch(userInput, activeRegex);
-
-    // Display result
-    Console.WriteLine($"{userInput} matches {activeRegex}? {isMatch}");
+    // Stop the program from crashing on an invalid regex
+    try
+    {
+        bool isMatch = Regex.IsMatch(userInput, activeRegex);
+        Console.WriteLine($"{userInput} matches {activeRegex}? {isMatch}");
+    }
+    catch (ArgumentException)
+    {
+        Console.WriteLine("Invalid regular expression. Please try again.");
+    }
     Console.WriteLine();
 
     // Ask user to continue or exit using ESC key
