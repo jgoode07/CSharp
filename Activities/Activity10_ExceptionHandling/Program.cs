@@ -24,3 +24,19 @@ if (!double.TryParse(secondInput, out double num2))
 }
 
 Console.WriteLine($"Numbers entered: {num1} and {num2}");
+
+
+// Divide the numbers with exception handling
+try
+{
+    double result = num1 / num2;
+    Console.WriteLine($"{num1} divided by {num2} equals {result}");
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("Error: You cannot divide by zero.");
+}
+catch (Exception)
+{
+    Console.WriteLine("There was an error during the calculation.");
+}
