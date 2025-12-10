@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+// Ask for the first number
+Console.Write("Enter the first number: ");
+string? firstInput = Console.ReadLine();
