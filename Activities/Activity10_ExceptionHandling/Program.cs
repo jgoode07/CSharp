@@ -1,4 +1,13 @@
-﻿using System;
+﻿/// <summary>
+/// Prompts the user for two numbers, divides the first by the second,
+/// and safely handles invalid input and runtime exceptions.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET  
+/// </remarks>
+
+using System;
 
 // Ask for the first number
 Console.Write("Enter the first number: ");

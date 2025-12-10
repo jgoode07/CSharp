@@ -22,3 +22,4 @@ This folder contains all of the smaller practice activities completed throughout
 - Activity 07 – Date/Time App
 - Activity 08 – Collection Manipulation
 - Activity 09 - File I/O
+- Activity 10 - Exception Handling
