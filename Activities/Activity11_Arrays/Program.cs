@@ -10,3 +10,13 @@ for (int i = 0; i < numbers.Length; i++)
 {
     numbers[i] = rand.Next(1, 101);
 }
+
+// Show the original numbers
+Console.WriteLine("Original array numbers:");
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.Write(numbers[i] + " ");
+}
+
+Console.WriteLine();
