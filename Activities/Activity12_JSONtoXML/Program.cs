@@ -32,3 +32,24 @@ string json = @"
   }
 }
 ";
+
+// The top-level "menu" object in the JSON
+public class MenuData
+{
+    public Menu? menu { get; set; }
+}
+
+// Holds the menu header and the list of items
+public class Menu
+{
+    public string? header { get; set; }
+
+    public List<MenuItem?>? items { get; set; }
+}
+
+// Represents a menu item
+public class MenuItem
+{
+    public string? id { get; set; }
+    public string? label { get; set; }
+}
