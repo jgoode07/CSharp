@@ -33,6 +33,9 @@ string json = @"
 }
 ";
 
+// Turn the JSON into C# objects
+MenuData? data = JsonSerializer.Deserialize<MenuData>(json);
+
 // The top-level "menu" object in the JSON
 public class MenuData
 {
