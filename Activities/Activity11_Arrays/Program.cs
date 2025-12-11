@@ -20,3 +20,15 @@ for (int i = 0; i < numbers.Length; i++)
 }
 
 Console.WriteLine();
+
+// Sort the array in ascending order
+Array.Sort(numbers);
+
+Console.WriteLine("\nSorted array (ascending):");
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.Write(numbers[i] + " ");
+}
+
+Console.WriteLine();
