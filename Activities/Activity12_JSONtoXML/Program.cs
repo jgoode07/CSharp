@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text.Json;
+using System.Xml.Linq;
 
 string json = @"
 {
@@ -35,6 +36,15 @@ string json = @"
 
 // Turn the JSON into C# objects
 MenuData? data = JsonSerializer.Deserialize<MenuData>(json);
+
+// Start creating the <menu> XML structure
+var menuXml = new XElement("menu");
+
+// Add the header if it exists
+if (data?.menu?.header != null)
+{
+    menuXml.Add(new XElement("header", data.menu.header));
+}
 
 // The top-level "menu" object in the JSON
 public class MenuData
