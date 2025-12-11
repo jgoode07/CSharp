@@ -46,3 +46,34 @@ double average = (double)sum / numbers.Length;
 
 Console.WriteLine($"\nSum of elements: {sum}");
 Console.WriteLine($"Average value: {average}");
+
+// Allow the user to search for a specific number
+Console.Write("\nEnter a number to search for: ");
+string? input = Console.ReadLine();
+
+if (!int.TryParse(input, out int searchValue))
+{
+    Console.WriteLine("Invalid input. Please enter a valid integer.");
+    return;
+}
+
+// Search through the array
+bool found = false;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] == searchValue)
+    {
+        found = true;
+        break;
+    }
+}
+
+if (found)
+{
+    Console.WriteLine($"{searchValue} was found in the array.");
+}
+else
+{
+    Console.WriteLine($"{searchValue} was NOT found in the array.");
+}
