@@ -1,4 +1,14 @@
-﻿using System;
+﻿/// <summary>
+/// Create an array of random integers, sort them, 
+/// calculate sum and average, and allow the user 
+/// to search through them for a specific number.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: C# Programming
+/// </remarks>
+
+using System;
 
 // Create an array of integers
 int[] numbers = new int[10];
