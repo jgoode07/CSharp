@@ -32,3 +32,17 @@ for (int i = 0; i < numbers.Length; i++)
 }
 
 Console.WriteLine();
+
+// Calculate sum of all elements
+int sum = 0;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    sum += numbers[i];
+}
+
+// Calculate average
+double average = (double)sum / numbers.Length;
+
+Console.WriteLine($"\nSum of elements: {sum}");
+Console.WriteLine($"Average value: {average}");
