@@ -1,4 +1,14 @@
-﻿using System;
+﻿/// <summary>
+/// This program takes a JSON menu structure, deserializes 
+/// it, converts the data into an XML format, and prints 
+/// the result.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode
+/// Course: .NET
+/// </remarks>
+
+using System;
 using System.Text.Json;
 using System.Xml.Linq;
 

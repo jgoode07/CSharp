@@ -24,3 +24,4 @@ This folder contains all of the smaller practice activities completed throughout
 - Activity 09 - File I/O
 - Activity 10 - Exception Handling
 - Activity 11 - Arrays
+- Activity 12 - JSON to XML
