@@ -46,6 +46,35 @@ if (data?.menu?.header != null)
     menuXml.Add(new XElement("header", data.menu.header));
 }
 
+// Add menu items
+if (data?.menu?.items != null)
+{
+    foreach (var item in data.menu.items)
+    {
+        if (item == null)
+        {
+            // JSON null to <separator/>
+            menuXml.Add(new XElement("separator"));
+        }
+        else
+        {
+            // Build <item> tag
+            var xmlItem = new XElement("item",
+                new XAttribute("action", item.id ?? ""),
+                new XAttribute("id", item.id ?? "")
+            );
+
+            // Inner text = label (if it exists), otherwise id
+            xmlItem.Value = item.label ?? item.id ?? "";
+
+            menuXml.Add(xmlItem);
+        }
+    }
+}
+
+// Print the finished XML
+Console.WriteLine(menuXml);
+
 // The top-level "menu" object in the JSON
 public class MenuData
 {
