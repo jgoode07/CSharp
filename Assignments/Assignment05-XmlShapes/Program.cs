@@ -1,4 +1,14 @@
-﻿using System.Xml.Serialization;
+﻿/// <summary>
+/// Creates a list of shapes, saves them to an XML file using serialization,
+/// then loads them back from XML and displays each shape with its area.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode  
+/// Course: .NET  
+/// Assignment: Assignment05 – XML Shapes Serialization
+/// </remarks>
+
+using System.Xml.Serialization;
 
 // Create a list of Shapes to serialize
 var listOfShapes = new List<Shape>
