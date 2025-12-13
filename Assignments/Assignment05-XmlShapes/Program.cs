@@ -23,3 +23,13 @@ using (var file = File.Create(xmlPath))
 }
 
 Console.WriteLine("Shapes saved to XML.");
+
+// Read shapes back from XML
+List<Shape>? loadedShapes;
+
+using (var file = File.OpenRead(xmlPath))
+{
+    loadedShapes = serializer.Deserialize(file) as List<Shape>;
+}
+
+Console.WriteLine("\nLoading shapes from XML:\n");
