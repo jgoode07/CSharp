@@ -13,8 +13,11 @@ var listOfShapes = new List<Shape>
 // File path for saving the XML output
 string xmlPath = "shapes.xml";
 
-// Create the serializer for a List<Shape>
-var serializer = new XmlSerializer(typeof(List<Shape>));
+// Create the serializer for List<Shape>, including Circle and Rectangle
+var serializer = new XmlSerializer(
+    typeof(List<Shape>),
+    new Type[] { typeof(Circle), typeof(Rectangle) }
+);
 
 // Write the XML file
 using (var file = File.Create(xmlPath))
