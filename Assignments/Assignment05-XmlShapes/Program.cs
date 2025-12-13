@@ -33,3 +33,17 @@ using (var file = File.OpenRead(xmlPath))
 }
 
 Console.WriteLine("\nLoading shapes from XML:\n");
+
+// Make sure the list actually loaded before trying to use it
+if (loadedShapes != null)
+{
+    // Loop through each shape and display its details
+    foreach (Shape item in loadedShapes)
+    {
+        Console.WriteLine($"{item.GetType().Name} is {item.Colour} and has an area of {item.Area}");
+    }
+}
+else
+{
+    Console.WriteLine("No shapes were loaded from XML.");
+}
