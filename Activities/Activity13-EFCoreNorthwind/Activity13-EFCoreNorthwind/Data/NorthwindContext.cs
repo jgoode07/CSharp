@@ -11,6 +11,10 @@ namespace Activity13_EFCoreNorthwind.Data
     {
         // Represents the Categories table in the database
         public DbSet<Category> Categories { get; set; }
+        
+        // Represents the Customers table
+        public DbSet<Customer> Customers { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
