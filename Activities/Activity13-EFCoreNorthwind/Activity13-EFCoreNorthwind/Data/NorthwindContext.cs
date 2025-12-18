@@ -15,6 +15,8 @@ namespace Activity13_EFCoreNorthwind.Data
         // Represents the Customers table
         public DbSet<Customer> Customers { get; set; }
 
+        // Represents the Order table
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
