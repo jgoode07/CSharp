@@ -15,7 +15,7 @@ namespace Activity13_EFCoreNorthwind.Data
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(
-                "Server=.;Database=Northwind;Trusted_Connection=True;TrustServerCertificate=True");
+                "Server=localhost\\SQLEXPRESS01;Database=Northwind;Trusted_Connection=True;TrustServerCertificate=True");
         }
     }
 }
