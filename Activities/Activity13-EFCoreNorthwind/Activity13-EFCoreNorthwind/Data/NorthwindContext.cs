@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Activity13_EFCoreNorthwind.Models;
 
 namespace Activity13_EFCoreNorthwind.Data
 {
+    // The database connection for the Northwind database
     public class NorthwindContext : DbContext
     {
+        // Represents the Categories table in the database
+        public DbSet<Category> Categories { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(
