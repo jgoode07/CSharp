@@ -1,5 +1,6 @@
 ﻿using Assignment06_QueryingWithLINQ.Data;
 using Assignment06_QueryingWithLINQ.Models;
+using System.Text.Json;
 
 try
 {
@@ -19,6 +20,10 @@ try
     };
 
     Console.WriteLine($"Loaded {data.Categories.Count} categories.");
+
+    // Serialize the data to JSON and measure size
+    var jsonBytes = JsonSerializer.SerializeToUtf8Bytes(data);
+    Console.WriteLine($"JSON size: {jsonBytes.Length} bytes");
 }
 catch (Exception ex)
 {
