@@ -2,6 +2,7 @@
 using Assignment06_QueryingWithLINQ.Models;
 using System.Text.Json;
 using System.Xml.Serialization;
+using System.Runtime.Serialization;
 
 try
 {
@@ -40,6 +41,15 @@ try
     {
         Console.WriteLine($"XML error: {ex.InnerException?.Message ?? ex.Message}");
     }
+
+    // Serialize the data using DataContractSerializer and measure size
+    var dataContractSerializer = new DataContractSerializer(typeof(NorthwindData));
+
+    using var dcStream = new MemoryStream();
+    dataContractSerializer.WriteObject(dcStream, data);
+
+    Console.WriteLine($"DataContract size: {dcStream.Length} bytes");
+
 }
 catch (Exception ex)
 {
