@@ -1,4 +1,13 @@
-﻿using Activity13_EFCoreNorthwind.Data;
+﻿/// <summary>
+/// Console application that uses Entity Framework Core
+/// to query and display data from the Northwind database.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode
+/// Course: .NET Programming
+/// </remarks>
+
+using Activity13_EFCoreNorthwind.Data;
 
 using (var context = new NorthwindContext())
 {
