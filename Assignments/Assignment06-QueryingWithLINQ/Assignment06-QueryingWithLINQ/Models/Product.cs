@@ -1,4 +1,6 @@
-﻿namespace Assignment06_QueryingWithLINQ.Models;
+﻿using System.Xml.Serialization;
+
+namespace Assignment06_QueryingWithLINQ.Models;
 
 // Represents a product from the Northwind database
 public class Product
@@ -11,5 +13,6 @@ public class Product
     public int CategoryId { get; set; }
 
     // Navigation back to Category
+    [XmlIgnore]
     public Category? Category { get; set; }
 }
