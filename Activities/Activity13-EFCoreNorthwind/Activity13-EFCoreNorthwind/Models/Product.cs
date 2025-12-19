@@ -9,6 +9,6 @@ namespace Activity13_EFCoreNorthwind.Models
         public int ProductId { get; set; }
         public string ProductName { get; set; } = string.Empty;
         public decimal UnitPrice { get; set; }
-        public int UnitsInStock { get; set; }
+        public short UnitsInStock { get; set; }
     }
 }

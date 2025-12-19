@@ -32,4 +32,15 @@ using (var context = new NorthwindContext())
     {
         Console.WriteLine($"{supplier.CompanyName} - {supplier.ContactName} ({supplier.Phone})");
     }
+
+    Console.WriteLine();
+
+    // Products in stock with price over $50
+    var expensiveProducts = context.Products
+        .Where(p => p.UnitsInStock > 0 && p.UnitPrice > 50);
+
+    foreach (var product in expensiveProducts)
+    {
+        Console.WriteLine($"{product.ProductName} - ${product.UnitPrice:F2}"); // Format to 2 decimal points
+    }
 }
