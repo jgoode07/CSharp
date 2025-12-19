@@ -22,4 +22,14 @@ using (var context = new NorthwindContext())
     {
         Console.WriteLine(customer.CompanyName);
     }
+
+    Console.WriteLine();
+
+    // Display all suppliers and contact info
+    var suppliers = context.Suppliers;
+
+    foreach (var supplier in suppliers)
+    {
+        Console.WriteLine($"{supplier.CompanyName} - {supplier.ContactName} ({supplier.Phone})");
+    }
 }
