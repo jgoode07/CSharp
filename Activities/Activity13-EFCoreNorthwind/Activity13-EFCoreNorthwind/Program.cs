@@ -66,4 +66,16 @@ using (var context = new NorthwindContext())
     }
 
     Console.WriteLine();
+
+    // Use London as an example for customers in a city
+    Console.WriteLine("Customers from London:");
+
+    var londonCustomers = context.Customers
+        .Where(c => c.City == "London")
+        .OrderBy(c => c.CompanyName);
+
+    foreach (var customer in londonCustomers)
+    {
+        Console.WriteLine(customer.CompanyName);
+    }
 }

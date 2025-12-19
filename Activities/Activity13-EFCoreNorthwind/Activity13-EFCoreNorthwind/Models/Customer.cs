@@ -8,5 +8,6 @@ namespace Activity13_EFCoreNorthwind.Models
     {
         public string CustomerId { get; set; } = string.Empty;
         public string CompanyName { get; set; } = string.Empty;
+        public string? City { get; set; }
     }
 }
