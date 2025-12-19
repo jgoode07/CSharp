@@ -18,6 +18,9 @@ namespace Activity13_EFCoreNorthwind.Data
         // Represents the Order table
         public DbSet<Order> Orders { get; set; }
 
+        // Represents the Supplier table
+        public DbSet<Supplier> Suppliers { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             options.UseSqlServer(
