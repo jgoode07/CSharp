@@ -6,21 +6,19 @@ try
     // Create the database context to access Northwind
     using var context = new NorthwindContext();
 
-    // Query categories and count how many products belong to each one
-    var categories = context.Categories
-        .Select(c => new
-        {
-            c.CategoryName,
-            ProductCount = c.Products.Count
-        })
-        .ToList();
-
-    Console.WriteLine($"Loaded {categories.Count} categories.");
-
-    foreach (var category in categories)
+    var data = new NorthwindData
     {
-        Console.WriteLine($"{category.CategoryName} ({category.ProductCount} products)");
-    }
+        Categories = context.Categories
+            .Select(c => new Category
+            {
+                CategoryId = c.CategoryId,
+                CategoryName = c.CategoryName,
+                Products = c.Products.ToList()
+            })
+            .ToList()
+    };
+
+    Console.WriteLine($"Loaded {data.Categories.Count} categories.");
 }
 catch (Exception ex)
 {
