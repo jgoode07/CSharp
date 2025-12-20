@@ -86,6 +86,12 @@ try
     Console.Write("Enter the name of a city: ");
     var city = Console.ReadLine();
 
+    if (string.IsNullOrWhiteSpace(city))
+    {
+        Console.WriteLine("City name cannot be empty.");
+        return;
+    }
+
     var customersInCity = context.Customers
         .Where(c => c.City == city)
         .Select(c => c.CompanyName)
