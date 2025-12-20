@@ -81,11 +81,25 @@ try
     // ------------
     //  QUESTION 2
     // ------------
-    Console.WriteLine("\n--- Customer Lookup by City ---");
+    Console.WriteLine("\nQuestion 2: Customer Lookup by City");
+
+    Console.WriteLine();
+
+    var cities = context.Customers
+    .Select(c => c.City)
+    .Where(c => !string.IsNullOrEmpty(c))
+    .Distinct()
+    .OrderBy(c => c)
+    .ToList();
+
+    Console.WriteLine("Available cities:");
+    Console.WriteLine(string.Join(", ", cities));
+    Console.WriteLine();
 
     Console.Write("Enter the name of a city: ");
     var city = Console.ReadLine();
 
+    // Validate user input
     if (string.IsNullOrWhiteSpace(city))
     {
         Console.WriteLine("City name cannot be empty.");
