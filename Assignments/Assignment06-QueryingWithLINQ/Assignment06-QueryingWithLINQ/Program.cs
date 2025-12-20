@@ -22,7 +22,9 @@ try
             .ToList()
     };
 
-    // QUESTION 1
+    // ------------
+    //  QUESTION 1
+    // ------------
     Console.WriteLine("Question 1: Category and Product Serialization");
 
     Console.WriteLine(); // Spacing
@@ -74,6 +76,25 @@ try
     foreach (var item in ranked)
     {
         Console.WriteLine($"{item.Format}: {item.Bytes} bytes");
+    }
+
+    // ------------
+    //  QUESTION 2
+    // ------------
+    Console.WriteLine("\n--- Customer Lookup by City ---");
+
+    Console.Write("Enter the name of a city: ");
+    var city = Console.ReadLine();
+
+    var customersInCity = context.Customers
+        .Where(c => c.City == city)
+        .Select(c => c.CompanyName)
+        .ToList();
+
+    Console.WriteLine($"\nThere are {customersInCity.Count} customers in {city}:");
+    foreach (var company in customersInCity)
+    {
+        Console.WriteLine(company);
     }
 
 }
