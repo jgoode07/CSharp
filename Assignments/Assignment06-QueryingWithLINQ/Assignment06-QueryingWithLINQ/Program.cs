@@ -1,4 +1,15 @@
-﻿using Assignment06_QueryingWithLINQ.Data;
+﻿/// <summary>
+/// Console app that uses LINQ to query the Northwind database.
+/// The program serializes category and product data using different 
+/// formats and compares their file sizes. It also lets the user 
+/// look up customers based on the city they enter.
+/// </summary>
+/// <remarks>
+/// Author: Joe Goode
+/// Course: .NET
+/// </remarks>
+
+using Assignment06_QueryingWithLINQ.Data;
 using Assignment06_QueryingWithLINQ.Models;
 using System.Net.Security;
 using System.Runtime.Serialization;
