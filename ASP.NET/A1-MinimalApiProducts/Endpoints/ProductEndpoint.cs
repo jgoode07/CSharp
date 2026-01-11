@@ -44,5 +44,17 @@ namespace A1_MinimalApiProducts.Endpoints
 
             return Results.Ok(product);
         }
+
+        // Delete a product by ID
+        public static IResult DeleteProduct(int id)
+        {
+            var product = _products.FirstOrDefault(p => p.ProductId == id);
+
+            if (product == null)
+                return Results.NotFound($"No product found with id {id}.");
+
+            _products.Remove(product);
+            return Results.NoContent();
+        }
     }
 }
