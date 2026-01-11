@@ -11,7 +11,6 @@
 
 using Assignment06_QueryingWithLINQ.Data;
 using Assignment06_QueryingWithLINQ.Models;
-using System.Net.Security;
 using System.Runtime.Serialization;
 using System.Text.Json;
 using System.Xml.Serialization;
@@ -39,7 +38,7 @@ try
     Console.WriteLine("Question 1: Category and Product Serialization");
 
     Console.WriteLine(); // Spacing
-    
+
     Console.WriteLine($"Loaded {data.Categories.Count} categories.");
 
     // Serialize the data to JSON and measure size
