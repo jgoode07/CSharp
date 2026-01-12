@@ -45,4 +45,4 @@ After deleting product with ID 1, the remaining products are:
 Product ID 2
 Product ID 3
 
-![Final product list](screenshots/final-product-list.png)
+![Final product list](screenshot/final-product-list.png)
