@@ -16,11 +16,17 @@ namespace A1_MinimalApiProducts.Endpoints
         // Create a new product
         public static IResult CreateProduct(Product product)
         {
-            if (string.IsNullOrWhiteSpace(product.Name))
-                return Results.BadRequest("Name is required.");
-
-            if (product.Price < 0)
-                return Results.BadRequest("Price cannot be negative.");
+            // DataAnnotations validation
+            var validationResults = new List<System.ComponentModel.DataAnnotations.ValidationResult>();
+            var validationContext = new System.ComponentModel.DataAnnotations.ValidationContext(product);
+            if (!System.ComponentModel.DataAnnotations.Validator.TryValidateObject(product, validationContext, validationResults, true))
+            {
+                return Results.BadRequest(new {
+                    success = false,
+                    message = "Validation failed",
+                    errors = validationResults.Select(v => v.ErrorMessage)
+                });
+            }
 
             product.ProductId = _nextId++;
             _products.Add(product);
