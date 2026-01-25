@@ -1,5 +1,6 @@
 ﻿using A3_ProductsApi.Data;
 using A3_ProductsApi.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +8,7 @@ namespace A3_ProductsApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class ProductsController : ControllerBase
 {
     private readonly AppDbContext _context;
