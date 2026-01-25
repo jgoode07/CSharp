@@ -1,0 +1,26 @@
+﻿@page
+@model Practice_RazorPages_Site.Pages.ContactModel
+@{
+    <h1>Contact Me</h1>
+
+    <form method="post">
+        <div>
+            <label>Name</label><br />
+            <input type="text" name="Name" />
+        </div>
+
+        <div>
+            <label>Email</label><br />
+            <input type="email" name="Email" />
+        </div>
+
+        <div>
+            <label>Message</label><br />
+            <textarea name="Message"></textarea>
+        </div>
+
+        <br />
+
+        <button type="submit">Submit</button>
+    </form>
+}
