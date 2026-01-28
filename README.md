@@ -23,8 +23,9 @@ Each activity has its own project folder and focuses on one or two basic concept
 This folder contains the larger, graded assignments.  
 Each assignment has its own project and follows the instructions from the weekly modules.
 
-Completed so far:
 - Assignment 01 – Calculator  
 - Assignment 02 – Email Address Generator
 - Assignment 03 – Book Library
 - Assignment 04 – Regex Matcher
+- Assignment 05 – XML Shapes
+- Assignment 06 – Querying with LINQ
